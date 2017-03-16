@@ -1,0 +1,19 @@
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <row>
+            <h4>contact us</h4>
+            <ul class="list-inline banner-social-buttons">
+                {% for network in site.social %}
+                <li>
+                    <a href="{{ network.url }}" class="footer-link btn btn-lg white hidden-xs"><i class="fa fa-{{ network.icon }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    <a href="{{ network.url }}" class="footer-link white visible-xs-inline-block"><i class="fa fa-{{ network.icon }} fa-fw"></i></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </row>
+    </div>
+    <div class="container text-center">
+        <h5>Copyright &copy; {{ site.footer }} 20{{ site.time | date: '%y' }}</h5>
+    </div>
+</footer>

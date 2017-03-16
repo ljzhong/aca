@@ -1,0 +1,121 @@
+.postcard-mock {
+    width:100%;
+    padding-bottom: 66%;
+    border:1px solid black; /** <-- For the demo **/
+    background-color:white;
+}
+#postcard-mock-front img {
+    position:absolute;
+    width:100%;
+    left:0;
+}
+#postcard-mock-back img {
+    position:absolute;
+    width:95%;
+    margin-top:5%;
+    margin-left:2.5%;
+    left:0;
+}
+.postcard-mock-text {
+    text-align: left;
+    color:black;
+    font-size:4pt;
+    margin-bottom:8pt;
+}
+
+/* positioning */
+#postcard-mock-body {
+    position:absolute;
+    left: 5%;
+    top:35%;
+    width:35%;
+}
+#postcard-mock-address {
+    position:absolute;
+    left: 45%;
+    width: 50%;
+    top: 40%;
+    height: 50%;
+
+    border: 1px black solid;
+}
+#postcard-mock-from-address {
+    position:absolute;
+    left:10%;
+    top: 10%
+}
+#postcard-mock-to-address {
+    position:absolute;
+    left:10%;
+    top: 50%
+}
+#postcard-mock-stamp {
+    position:absolute;
+    right:5%;
+    top: 10%;
+    height:15%;
+    width:16%;
+    background-color:black;
+}
+
+/* What it looks like on tablet */
+@media(min-width:767px) {
+    .postcard-mock {
+        width:50%;
+        padding-bottom: 32%;
+        border:1px solid black; /** <-- For the demo **/
+    }
+    #postcard-mock-front img {
+        position:absolute;
+        width:100%;
+        left:0;
+    }
+    #postcard-mock-back img {
+        position:absolute;
+        width:95%;
+        margin-top:5%;
+        margin-left:2.5%;
+        left:0;
+    }
+    .postcard-mock-text {
+        text-align: left;
+        color:black;
+        font-size:6pt;
+        margin-bottom:8pt;
+    }
+
+    /* positioning */
+    #postcard-mock-body {
+        position:absolute;
+        left: 5%;
+        top:35%;
+        width:35%;
+    }
+    #postcard-mock-address {
+        position:absolute;
+        left: 45%;
+        width: 50%;
+        top: 40%;
+        height: 50%;
+
+        border: 1px black solid;
+    }
+    #postcard-mock-from-address {
+        position:absolute;
+        left:10%;
+        top: 10%
+    }
+    #postcard-mock-to-address {
+        position:absolute;
+        left:10%;
+        top: 50%
+    }
+    #postcard-mock-stamp {
+        position:absolute;
+        right:5%;
+        top: 10%;
+        height:15%;
+        width:16%;
+        background-color:black;
+    }
+}

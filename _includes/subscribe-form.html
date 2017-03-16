@@ -1,0 +1,27 @@
+<!-- BEGIN FORM -->
+<form id="subscribe-form" name="subscribe" action="thank-you" netlify>
+    <p class="subscribe-form-top-label">Get updates via email. No spam, we promise.</p>
+    <p>
+        <input id="subscribe-email" class="subscribe-form-input" title="Your valid email address" placeholder="Your email address" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" required>
+    </p>
+
+    <!-- 
+    <p>
+        <input id="subscribe-zip" class="subscribe-form-input" title="Your 5-digit zipcode" placeholder="Your 5-digit zipcode" type="text" pattern="[0-9]{5}" name="zip" required>
+    </p>
+
+    <textarea class="subscribe-form-input" rows="5" cols="250" title="Your Obamacare story" name="story" placeholder="(Optional!) Tell us your Obamacare story"></textarea>
+    -->
+
+    <p class="subscribe-form-top-label">Like our Facebook page for info on our events and direct communication.</p>
+    <div class="subscribe-fb">
+        <div class="fb-page" data-href="https://www.facebook.com/fightforhealthcare" data-tabs="timeline" data-height="72" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/fightforhealthcare" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fightforhealthcare">Fight for Healthcare</a></blockquote></div>
+    </div>
+
+    <input type="hidden" name="page" value="{{page.path}}">
+    <p id="subscribe-error"></p>
+    <p>
+        <button class="subscribe-form-button btn">Submit</button>
+    </p>
+</form>
+<!-- ENDE FORM -->

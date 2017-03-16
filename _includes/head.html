@@ -1,0 +1,59 @@
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    dataLayer = [];
+    </script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MQ8Z827');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    
+    <title>{% if page.title %}{{ page.title }}{% elsif post.title %}{{ post.title }}}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif post.description %}{{ post.description }}}{% else %}{{ site.description }}{% endif %}">
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% elsif post.url %}{{ post.url }}}{% else %}{{ site.url }}{% endif %}"
+    />
+    <meta property="og:title" content="{% if page.ogtitle %}{{ page.ogtitle }}{% elsif post.ogtitle %}{{ post.ogtitle }}}{% else %}{{ site.ogtitle }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}{% if page.ogimagelink %}{{ page.ogimagelink }}{% elsif post.ogimagelink %}{{ post.ogimagelink }}}{% else %}{{ site.ogimagelink }}{% endif %}">
+    <meta property="og:image:width" content="{% if page.ogimagewidth %}{{ page.ogimagewidth }}{% elsif post.ogimagewidth %}{{ post.ogimagewidth }}}{% else %}{{ site.ogimagewidth }}{% endif %}">
+    <meta property="og:image:height" content="{% if page.ogimageheight %}{{ page.ogimageheight }}{% elsif post.ogimageheight %}{{ post.ogimageheight }}}{% else %}{{ site.ogimageheight }}{% endif %}">
+    <meta property="og:description" content="{% if page.ogdescription %}{{ page.ogdescription }}{% elsif post.ogdescription %}{{ post.ogdescription }}}{% else %}{{ site.ogdescription }}{% endif %}">
+    <meta property="fb:app_id" content="{{ site.facebookappid }}">
+
+    <meta name="google-site-verification" content="m9QxZCxM78sxzdLZY3MamCOH4kiYsmvZiV2GwSDa0BM" />
+
+    <link rel="canonical" href="{{ site.url }}{% if page.url %}{{ page.url }}{% elsif post.url %}{{ post.url }}}{% else %}{{ site.url }}{% endif %}">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ " /style.css " | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ " /css/font-awesome/css/font-awesome.min.css " | prepend: site.baseurl }}">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- stripe?? -->
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript">
+        Stripe.setPublishableKey('pk_test_lOicveHfBfEnyagr610STyX4');
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+</head>

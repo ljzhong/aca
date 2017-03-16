@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    {% include nav.html %}
+
+    <section id="post" class="content-section text-center">
+        <div class="post-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+
+                    
+                    {% include retirement.html %}
+
+                    {{ content }}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include footer.html %} 
+    {% include js.html %}
+</body>
+
+</html>

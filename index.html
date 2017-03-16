@@ -1,0 +1,74 @@
+---
+layout: default
+sitemap: true
+---
+
+{% include header.html %}
+{% include about.html %}
+{% include action.html %}
+{% include subscribe.html %}
+
+<section id="carousel"  class="text-center">				
+	<div id="carousel-section" class="container">
+        <h2>Thank you, ACA</h2>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="8000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1" class="active"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+
+				    <div class="item">
+                        <a href="/time/obamacare-story.html" class="btn red">Now, tell your story</a> <br/><br/>
+                        <a href="/benefits-of-obamacare">Or, read more stories</a>
+				    </div>
+
+                    {% for post in site.categories['story'] limit:3 %}
+				    <div class="item {% if forloop.first == true %} active {% endif %}">
+				    	<blockquote>
+                            <a href="#" data-toggle="modal" data-target="#{{ post.modal }}">
+				    		<p>
+                                {{ post.teaser}} <br/><br/>
+                                <small>{% if post.name == blank %}anonymous{% else %}{{ post.name }}{% endif %} from {{ post.state }}</small>
+                            </p>
+                            </a>
+				    	</blockquote>	
+				    </div>
+
+                    <!-- Modal -->
+                    <div id="{{ post.modal }}" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Real stories of real lives</h4>
+                            </div>
+                            <div class="modal-body">
+                                {{post.content}}
+                            </div>
+                            <div class="modal-footer">
+
+                                <a href="/time/obamacare-story.html" class="btn red">Thank you, ACA</a>
+                                <button type="button" class="btn btn-default darkblue" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+
+				  </div>
+				</div>
+			</div>							
+		</div>
+	</div>
+</section>

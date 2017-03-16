@@ -1,0 +1,15 @@
+# Redirects from what the browser requests to what we serve
+/home              /                        301
+
+/5dollars/special-elections.html /money/special-elections 301
+/5friends/six-senators.html  /friends/six-senators 301
+/5min/six-senators.html /friends/six-senators 301
+/5dollars/DCCC.html /money/special-elections 301
+/5friends/attend-a-town-hall.html /friends/meet-representative-town-hall 301
+
+/postcard /postcard-tsunami 301
+/pt /postcard-tsunami 301
+/about-us /benefits-of-obamacare 301
+/aboutus.html /benefits-of-obamacare 301
+
+/time/ides-of-trump /ides-of-trump 200

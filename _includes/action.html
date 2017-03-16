@@ -1,0 +1,66 @@
+    <!-- About Section -->
+    <section id="action" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h3 class="action-title">3 ways to fight for healthcare now</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="action-number liteblue">I've got time!</p>
+
+                <!-- TRUMP ACTION
+                <div id="action-one" class="action">
+
+                    {% for post in site.categories['time'] limit:1 %}
+                    
+                    <h4 class="action-title">{{ post.actiontitle }}</h4>
+                    <p class="action-body">{{ post.actiondescription }}</p>
+                    <a href="{{ post.url }}" class="btn action-btn liteblue">{{ post.actionbutton }}</a>
+
+                    {% endfor %}
+                </div>
+                -->
+
+                <div id="action-one" class="action">
+                    
+                    <h4 class="action-title">Ides of Trump: Oppose Trumpcare</h4>
+                    <p class="action-body">On March 15 thousands of Americans across the country will send the White House postcards of dissent. Mail the White House a postcard explaining why you oppose Trumpcare.</p>
+                    <a href="/ides-of-trump" class="btn action-btn liteblue">Send Trump a card</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="action-number darkblue">I've got money!</p>
+                <div id="action-three" class="action">
+
+                    {% for post in site.categories['money'] limit:1 %}
+                    
+                    <h4 class="action-title">{{ post.actiontitle }}</h4>
+                    <p class="action-body">{{ post.actiondescription }}</p>
+                    <a href="{{ post.url }}" class="btn action-btn darkblue">{{ post.actionbutton }}</a>
+
+                    {% endfor %}
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="action-number red">I've got friends!</p>
+                <div id="action-two" class="action">
+
+                    {% for post in site.categories['friends'] limit:1 %}
+                    
+                    <h4 class="action-title">{{ post.actiontitle }}</h4>
+                    <p class="action-body">{{ post.actiondescription }}</p>
+                    <a href="{{ post.url }}" class="btn action-btn red">{{ post.actionbutton }}</a>
+
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row transition">
+            <div class="col-lg-10 col-lg-offset-1">
+                <a href="/history.html"><h5 id="history-link">Can't find what you're looking for? See all actions</h5></a>
+            </div>
+        </div>
+    </section>

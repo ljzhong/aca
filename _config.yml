@@ -1,0 +1,55 @@
+# Site settings
+title: Fight for Healthcare
+email: fightforhealthcare@gmail.com
+url: https://www.fightforhealthcare.org
+description: "32 million Americans will be without healthcare if Obamacare is repealed without replacement. The fight for American healthcare is on!"
+
+imagelink: "/img/share-image.png"
+imagedescription: "We all deserve health care"
+
+ogtitle: "Affordable, accesible heath care for America | Fight for Healthcare"
+ogdescription: "32 million Americans will be without healthcare if Obamacare is repealed without replacement. The fight for American healthcare is on!"
+ogimagelink: "/img/share-image.png"
+ogimagewidth: 437
+ogimageheight: 222
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  text: '#000000'
+  primary-dark: '#FFFFFF'
+  links: '#58B89D'
+
+# Footer settings
+footer: Fight for Healthcare
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    icon: twitter
+    url: https://twitter.com/fight4healthcre
+  - title: facebook
+    icon: facebook
+    url: https://facebook.com/fightforhealthcare
+  - title: email
+    icon: envelope
+    url: mailto:fightforhealthcare@gmail.com
+
+# Build settings
+markdown: kramdown
+permalink: none
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-sitemap
+
+googleanalytics: ""
+facebookappid: 1257081251043986
+
+include: [_redirects]
+

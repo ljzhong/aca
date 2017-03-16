@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+  <title>Protect Affordable Insurance - back</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      border: 1px solid black;
+    }
+    /* do not put text outside of the safe area */
+    
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+    }
+    
+    #message {
+      position: absolute;
+      width: 2.2in;
+      height: 2in;
+      top: 1.2in;
+      left: .25in;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: .122in;
+    }
+    
+    .addressblock {
+      position: absolute;
+      width: 3in;
+      height: 2.25in;
+      top: 1.75in;
+      left: 3in;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: .122in;
+      border: 1px solid black;
+    }
+    
+    .stamp {
+      position: absolute;
+      border: 1px black solid;
+      width: 0.87in;
+      height: 0.7in;
+      left: 2in;
+      top: 0.2in;
+    }
+    
+    .stamp p {
+      position: absolute;
+      left: .23in;
+      top: .2in;
+      margin: 0 auto;
+    }
+    
+    .return-address {
+      font-size: .8em;
+      position: absolute;
+      left: .3in;
+      top: .3in;
+    }
+    
+    .recipient-address {
+      position: absolute;
+      left: .3in;
+      top: 1.3in;
+    }
+    
+    #header {
+      height: 1in;
+    }
+    
+    #header img {
+      top: 0;
+      left: 0;
+      width: 100%;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='safe-area'>
+    <div id='header'> <img src='https://raw.githubusercontent.com/activegiver/aca/master/img/postcard/{{ postcard }}-h1.png'></img>
+  </div>
+    <div id='message'>
+      Dear Congressman <span class='postcard-mock-rep'>{{ rep_name }}</span>, <br><br>
+      <span class='postcard-mock-text'>{{ text }}</span>      
+      <br><br> Best, <br><span class='postcard-mock-name'>{{ fname }} {{ linit }}.</span> 
+    </div>
+  </div>
+</body>
+
+</html>

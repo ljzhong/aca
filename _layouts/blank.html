@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ8Z827"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
+        <!-- Facebook manager -->
+        <script> window.fbAsyncInit = function() { FB.init({ appId : '1257081251043986', xfbml : true, version : 'v2.8' }); FB.AppEvents.logPageView(); }; (function(d, s, id){ var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
+    {{ content }}
+    {% include js.html %}
+    </body>
+</html>

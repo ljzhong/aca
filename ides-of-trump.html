@@ -1,0 +1,181 @@
+--- 
+sitemap: true
+layout: default  
+title: "Ides of Trump: Oppose Trumpcare| F4H"
+description: "On March 15 Americans will send the White House postcards of dissent.
+Mail them a postcard explaining why you oppose Trumpcare. We'll take care of the design and postage,  
+all you need is your story."
+
+imagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
+imagedescription: Regulations Comment
+
+ogtitle: "Ides of Trump: Oppose Trumpcare"
+ogimagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
+ogdescription: "On 3.15.17 Americans will send the White House postcards of dissent.
+Let's flood the White House with postcards explaining why we oppose Trumpcare.
+Send the White House a postcard now! All you need is your story."
+ogimagewidth: "625"
+ogimageheight: "425"
+
+actiontitle: "Ides of Trump: Oppose Trumpcare"
+actiondescription: "On March 15 thousands of Americans across the country will send the White House
+postcards of dissent. Mail the White House a postcard explaining why you oppose Trumpcare."
+actionbutton: "Send A Postcard"
+---
+
+
+<section id="postcard-trump" class="container-fluid content-section text-center">
+        <div class="col-lg-12" style="padding:0;">
+            <h1>Ides of trump</h1>
+            <!-- multistep form -->
+            <form id="msform" name="ides-trump" action="ides-trump-next-step" netlify>
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Introduction</li>
+                    <li>Pick a postcard</li>
+                    <li>finishing touches</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h3 class="fs-subtitle">step 1 of 3</h3>
+                    <h2 class="fs-title">"beware the Ides of &#91;Trump&#93;"</h2>
+                    <p>
+                        On <strong>March 15, 2017</strong> America is <a href="https://www.theidesoftrump.com/#theidesoftrump">mailing Trump 1,000,000 postcards</a>.<br/>
+                        Let’s battle Trumpcare with our voices.<br/>
+                        <br/>
+                        We’ll take care of the design and postage.<br/>
+                        You tell your story.
+                    </p>
+                    <input id="postcard-trump-1" type="button" name="next" class="next postcard-transition-button action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">step 2 of 3</h3>
+                    <h2 class="fs-title">Pick a postcard front</h2>
+                    <!-- postvard preview -->
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/dont-repeal-sm.jpg" alt="dont-repeal" class="postcard-img postcard-selected"></img>
+                        </div>
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/protect-affordable-sm.jpg" alt="protect-affordable" class="postcard-img"></img>
+                        </div>
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/we-want-sm.jpg" alt="we-want" class="postcard-img"></img>
+                        </div>
+                    </div>
+
+                    <input id="postcard-front" type="hidden" name="front" value="postcard-logo">
+                    <input id="postcard-previous-2-trump" type="button" name="previous" class="previous action-button postcard-transition-button" value="Previous" />
+                    <input id="postcard-next-2-trump" type="button" name="next" class="next action-button postcard-transition-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">Step 3 of 3</h3>
+                    <h2 class="fs-title">Finishing Touches</h2>
+                    <input id="postcard-fname-trump" type="text" name="fname" placeholder="First Name" />
+                    <input id="postcard-lname-trump" type="text" name="lname" placeholder="Last Name (or initial)" />
+                    <input id="postcard-zip-trump" type="text" pattern="[0-9]{5}" placeholder="Five digit zip code" name="zip" />
+                    <input id="postcard-email-trump" type="text" name="email" placeholder="Email" />
+
+                    <textarea id="postcard-story-trump" name="why" placeholder="Statement of support"></textarea>
+                    <div id="postcard-story-char-trump"><span>300</span> characters remaining</div>
+
+                    <div id="postcard-error-2-trump"></div>
+                    <input id="postcard-previous-3-trump" type="button" name="previous" class="previous action-button postcard-transition-button" value="Previous" />
+                    <input id="postcard-form-validate-trump" type="button" class="postcard-transition-button postcard-submit action-button" value="Submit" />
+                    <div>*Required</div>
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">almost done</h3>
+                    <h2 class="fs-title">pay with capital or social capital?</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="postcard-describe postcard-describe-big">$2</p>
+                            <button id="stripeButton-trump" class="postcard-transition-button postcard-submit submit-button">Pay for postcard</button>
+                            <input type="hidden" name="stripeToken" />
+                            <p class="postcard-describe">70&#162; production, 30&#162; shipping, $1 convenience fee</p>
+                        </div>
+                        <div class="visible-xs"> - or - </div>
+                        <div class="col-sm-6">
+                            <p class="postcard-describe postcard-describe-big">Free</p>
+
+                            <input type="submit" id="postcard-submit-friend-trump" class="postcard-transition-button postcard-submit submit-button" value="Share on Facebook" />
+                            <p class="postcard-describe">We cover all the fees</p>
+                        </div>
+                    </div>
+                    <!-- postvard preview -->
+                    <hr/>
+                    <h3 class="fs-subtitle">postcard preview</h3>
+                    <div class="row mobile-preview">
+                        <div id="postcard-mock-front" class="col-sm-6 postcard-mock">
+                            <img src="/img/postcard/dont-repeal-sm.jpg" alt="Front of Postcard"></img>
+                        </div>
+                        <div id="postcard-mock-back" class="col-sm-6 postcard-mock">
+                            <img src="/img/postcard/dont-repeal-h1.png" alt="H1 back of Postcard"></img>
+                            
+                            <div id="postcard-mock-body">
+                                <p id="postcard-mock-rep" class="postcard-mock-text">
+                                    Dear Mr. President, <span class="mock-rep-name-trump"></span>,
+                                </p>
+                                <p id="postcard-mock-story" class="postcard-mock-text">
+                                    <span id="mock-story"></span>
+                                </p>
+                                <p id="postcard-mock-name" class="postcard-mock-text">
+                                    Best,<br/><span class="mock-fname"></span> <span class="mock-linit"></span> <br/>
+                                    <span class="mock-zip"></span>
+                                </p>
+                            </div>
+
+                            <div id="postcard-mock-address">
+                                <p id="postcard-mock-from-address" class="postcard-mock-text">
+                                    <span class="mock-fname"></span> <span class="mock-linit"></span><br/>
+                                    <span class="mock-zip"></span>
+                                </p>
+                                <p id="postcard-mock-to-address" class="postcard-mock-text">
+                                    The President (for now)<br/>
+                                    The White House<br/>
+                                    1600 Pennsylvania Ave NW<br/>
+                                    Washington, DC 20500
+                                </p>
+                                <p id="postcard-mock-stamp" class="postcard-mock-text">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end postcard preview -->
+                </fieldset>
+            </form>
+        </div>
+</section>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script>
+    var handler = StripeCheckout.configure({
+      key: 'pk_live_76Wb7Lw5XvaY1nwZYJoG9mbF',
+      image: '/img/tiny-tsunami.jpg',
+      locale: 'auto',
+      zipCode: true,
+      token: function(token) {
+        var $form = $('#msform');
+        $form.append($('<input type="hidden" name="stripeToken" />').val(token.id));
+        $form.get(0).submit();
+      }
+    });
+
+    document.getElementById('stripeButton-trump').addEventListener('click', function(e) {
+      // Open Checkout with further options:
+      handler.open({
+        name: 'Fight for Healthcare',
+        email: $('#postcard-email-trump').val(),
+        description: 'Your ACA postcard',
+        amount: 200,
+      });
+      e.preventDefault();
+    });
+
+    // Close Checkout on page navigation:
+    window.addEventListener('popstate', function() {
+      handler.close();
+    });
+</script>

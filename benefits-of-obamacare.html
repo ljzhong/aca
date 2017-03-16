@@ -1,0 +1,66 @@
+--- 
+layout: default 
+title: Why We Fight | F4H
+sitemap: true
+description: While the total effects that the ACA will have on society are unclear, we know that it has allowed many millions of Americans to afford health insurance for the first time.
+
+ogtitle: Why We Fight | F4H
+ogdescription: While the total effects that the ACA will have on society are unclear, we know that it has allowed many millions of Americans to afford health insurance for the first time.
+---
+
+<section id="about" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Why we started </br><span class="darkblue">Fight</span> <span class="liteblue">for</span> <span class="red">Healthcare</span></h1>
+                <p class="text-left">
+                    While the total effects that the ACA will have on society are unclear, we know that it has allowed many millions of Americans to afford health insurance for the first time. After Donald Drumpf was elected in November, we knew that Republicans would have a clear path to repealing the ACA, and were determined that they would not do it without input from everyday Americans. As we scour the news for information about what is happening with the ACA, we work to bring you the most relevant actions that you can take today.
+                </p> 
+                <p class="text-left">
+                    Our primary goal is to keep the ACA the way it is and, if at all possible, improve on it. If the ACA is repealed, we will work towards making sure that the replacement has the most important provisions from the original bill. Health is integral to our lives, and the lives of every American. Let's fight for Health Care now!
+                </p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Thank you, ACA</h3>
+        {% for post in site.categories['story'] limit:50%}
+        <div class="col-md-3 aca-story">
+            <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+            <blockquote>
+                <a href="#" data-toggle="modal" data-target="#{{ post.modal }}">
+                <p>
+                    {{ post.teaser}} <br/><br/>
+                    <small>{% if post.name == blank %}anonymous{% else %}{{ post.name }}{% endif %} from {{ post.state }}</small>
+                </p>
+                </a>
+            </blockquote>	
+        </div>
+
+        <!-- Modal -->
+        <div id="{{ post.modal }}" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Real stories of real lives</h4>
+                </div>
+                <div class="modal-body">
+                    {{post.content}}
+                </div>
+                <div class="modal-footer">
+
+                    <a href="/time/obamacare-story.html" class="btn red">Now, tell your story</a>
+                    <button type="button" class="btn btn-default darkblue" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+        <div class="col-md-3 aca-story">
+            <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                <a href="/time/obamacare-story.html" class="btn red">Now, tell your story</a>
+        </div>
+    </div>
+</section>

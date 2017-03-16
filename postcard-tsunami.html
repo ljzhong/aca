@@ -1,0 +1,189 @@
+--- 
+sitemap: true
+layout: default  
+title: Send A Postcard To Your Rep About Trumpcare | F4H 
+description: "Republicans have already introduced Trumpcare into the house. Send your representative a postcard telling them what 
+you think about their proposal. They need a reminder of what the ACA means to millions of Americans around the country." 
+
+ogtitle: "Send a Postcard To Your Representative Opposing Trumpcare | F4H" 
+ogdescription: "Republicans have already introduced Trumpcare into the house. Send your representative a postcard telling them what 
+you think about their proposal. They need a reminder of what the ACA means to millions of Americans around the country." 
+ogimagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
+ogimagewidth: "625"
+ogimageheight: "425" 
+
+imagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
+imagedescription: Send A Postcard To Your Rep About Trumpcare
+---
+
+
+<section id="postcard" class="container-fluid content-section text-center">
+        <div class="col-lg-12" style="padding:0;">
+            <h1>postcard tsunami</h1>
+            <!-- multistep form -->
+            <form id="msform" name="postcard-tsunami" action="postcard-next-step" netlify>
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Find your reps</li>
+                    <li>Pick a postcard</li>
+                    <li>finishing touches</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h3 class="fs-subtitle">step 1 of 3</h3>
+                    <h2 class="fs-title">Find your reps</h2>
+                    <input id="postcard-address" type="address" name="address" placeholder="Home address" />
+                    <div id="postcard-results" class="row">
+                        <div id="postcard-error" class="red"></div>
+                        <div id="postcard-sen1" class="postcard-congress"></div>
+                        <div id="postcard-sen2" class="postcard-congress"></div>
+                        <div id="postcard-rep" class="postcard-congress"></div>
+                    </div>
+                    <input type="hidden" name="address-line1" id="address-line1">
+                    <input type="hidden" name="address-city" id="address-city">
+                    <input type="hidden" name="address-state" id="address-state">
+                    <input type="hidden" name="address-zip" id="address-zip">
+
+                    <input type="hidden" name="rep1-name" id="rep1-name">
+                    <input type="hidden" name="rep1-address" id="rep1-address">
+                    <input type="hidden" name="rep1-zip" id="rep1-zip">
+
+                    <input type="hidden" name="rep2-name" id="rep2-name">
+                    <input type="hidden" name="rep2-address" id="rep2-address">
+                    <input type="hidden" name="rep2-zip" id="rep2-zip">
+
+                    <input type="hidden" name="rep3-name" id="rep3-name">
+                    <input type="hidden" name="rep3-address" id="rep3-address">
+                    <input type="hidden" name="rep3-zip" id="rep3-zip">
+
+                    <input id="postcard-address-button" type="button" name="next" class="next postcard-transition-button action-button disabled" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">step 2 of 3</h3>
+                    <h2 class="fs-title">Pick a postcard front</h2>
+                    <!-- postvard preview -->
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/dont-repeal-sm.jpg" alt="dont-repeal" class="postcard-img postcard-selected"></img>
+                        </div>
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/protect-affordable-sm.jpg" alt="protect-affordable" class="postcard-img"></img>
+                        </div>
+                        <div class="col-sm-4">
+                        <img src="/img/postcard/we-want-sm.jpg" alt="we-want" class="postcard-img"></img>
+                        </div>
+                    </div>
+
+                    <input id="postcard-front" type="hidden" name="front" value="postcard-logo">
+                    <input id="postcard-previous-2" type="button" name="previous" class="previous action-button postcard-transition-button" value="Previous" />
+                    <input id="postcard-next-2" type="button" name="next" class="next action-button postcard-transition-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">Step 3 of 3</h3>
+                    <h2 class="fs-title">Finishing Touches</h2>
+                    <input id="postcard-fname" type="text" name="fname" placeholder="First Name" />
+                    <input id="postcard-lname" type="text" name="lname" placeholder="Last Name (or initial)" />
+                    <input id="postcard-email" type="text" name="email" placeholder="Email" />
+
+                    <textarea id="postcard-story" name="why" placeholder="Statement of support"></textarea>
+                    <div id="postcard-story-char"><span>300</span> characters remaining</div>
+
+                    <div id="postcard-error-2"></div>
+                    <input id="postcard-previous-3" type="button" name="previous" class="previous action-button postcard-transition-button" value="Previous" />
+                    <input id="postcard-form-validate" type="button" class="postcard-transition-button postcard-submit action-button" value="Submit" />
+                    <div>*Required</div>
+                </fieldset>
+                <fieldset>
+                    <h3 class="fs-subtitle">almost done</h3>
+                    <h2 class="fs-title">pay with capital or social capital?</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="postcard-describe postcard-describe-big">$5/3</p>
+                            <button id="stripeButton" class="postcard-transition-button postcard-submit submit-button">Pay for postcards</button>
+                            <input type="hidden" name="stripeToken" />
+                            <p class="postcard-describe">$5 to produce and send <span class="liteblue">THREE</span> postcards.</p>
+                        </div>
+                        <div class="visible-xs"> - or - </div>
+                        <div class="col-sm-6">
+                            <p class="postcard-describe postcard-describe-big">Free</p>
+
+                            <input type="submit" id="postcard-submit-friend" class="postcard-transition-button postcard-submit submit-button" value="Share on Facebook" />
+                            <p class="postcard-describe">We cover all the fees</p>
+                        </div>
+                    </div>
+                    <!-- postvard preview -->
+                    <hr/>
+                    <h3 class="fs-subtitle">postcard preview</h3>
+                    <div class="row mobile-preview">
+                        <div id="postcard-mock-front" class="col-sm-6 postcard-mock">
+                            <img src="/img/postcard/dont-repeal-sm.jpg" alt="Front of Postcard"></img>
+                        </div>
+                        <div id="postcard-mock-back" class="col-sm-6 postcard-mock">
+                            <img src="/img/postcard/dont-repeal-h1.png" alt="H1 back of Postcard"></img>
+                            
+                            <div id="postcard-mock-body">
+                                <p id="postcard-mock-rep" class="postcard-mock-text">
+                                    Dear Senator <span class="mock-rep-name"></span>,
+                                </p>
+                                <p id="postcard-mock-story" class="postcard-mock-text">
+                                    <span id="mock-story"></span>
+                                </p>
+                                <p id="postcard-mock-name" class="postcard-mock-text">
+                                    Best,<br/><span class="mock-fname"></span> <span class="mock-linit"></span>
+                                </p>
+                            </div>
+
+                            <div id="postcard-mock-address">
+                                <p id="postcard-mock-from-address" class="postcard-mock-text">
+                                    <span class="mock-fname"></span> <span class="mock-linit"></span><br/>
+                                    <span class="mock-address-line1"></span><br/>
+                                    <span class="mock-address-line2"></span>
+                                </p>
+                                <p id="postcard-mock-to-address" class="postcard-mock-text">
+                                    <span class="mock-rep-name"></span><br/>
+                                    <span class="mock-rep-address-line1"></span><br/>
+                                    <span class="mock-rep-address-line2"></span>
+                                </p>
+                                <p id="postcard-mock-stamp" class="postcard-mock-text">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end postcard preview -->
+                </fieldset>
+            </form>
+        </div>
+</section>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script>
+    var handler = StripeCheckout.configure({
+      key: 'pk_live_76Wb7Lw5XvaY1nwZYJoG9mbF',
+      image: '/img/tiny-tsunami.jpg',
+      locale: 'auto',
+      zipCode: true,
+      token: function(token) {
+        var $form = $('#msform');
+        $form.append($('<input type="hidden" name="stripeToken" />').val(token.id));
+        $form.get(0).submit();
+      }
+    });
+
+    document.getElementById('stripeButton').addEventListener('click', function(e) {
+      // Open Checkout with further options:
+      handler.open({
+        name: 'Fight for Healthcare',
+        email: $('#postcard-email').val(),
+        description: '3 postcards for Postcard Tsunami',
+        amount: 500,
+      });
+      e.preventDefault();
+    });
+
+    // Close Checkout on page navigation:
+    window.addEventListener('popstate', function() {
+      handler.close();
+    });
+</script>
