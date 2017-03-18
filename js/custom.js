@@ -285,7 +285,16 @@ $("#postcard-address")
         gapi.client.setApiKey('AIzaSyAY6i_IaQ8wW-g1Vi96IDqMuEUkv_sCPg8');
         lookup(result.formatted_address, renderResults);
     });
+$("#postcard-address").blur(function () {
+    $("#postcard-address-button").addClass("disabled");
 
+    $("#postcard-error").empty().append(document.createTextNode(
+        "Find your reps by selecting your completed address"
+    ));
+    $("#postcard-sen1").empty();
+    $("#postcard-sen2").empty();
+    $("#postcard-rep").empty();
+});
 /**
  * Build and execute request to look up voter info for provided address.
  * @param {string} address Address for which to fetch voter info.
