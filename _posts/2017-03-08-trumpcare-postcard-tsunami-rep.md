@@ -11,7 +11,7 @@ actionbutton: "Send A Postcard"
 imagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
 imagedescription: Regulations Comment
 
-ogtitle: "Send a Postcard To Your Representative Opposing Trumpcare"
+ogtitle: "I sent a Postcard to my Representatives Opposing Trumpcare!"
 ogimagelink: "/assets/2017-03-09-postcard-tsunami/protect-affordable-sm.jpg"
 ogdescription: "Republicans have already introduced Trumpcare into the house. Send your representative a postcard telling them what you think about their proposal. They need a reminder of what the ACA means to millions of Americans around the country."
 ogimagewidth: "625"
@@ -35,7 +35,7 @@ Send a personalized postcard to your Representative explaining why you oppose Th
 <!-- Button -->
 
 {: style="text-align:center"}
-<a class="post-link-btn btn red" href="http://fightforhealthcare.org/postcard-tsunami" > Send A Postcard</a>
+<a class="post-link-btn btn red" href="http://fightforhealthcare.org/postcard-tsunami" > Create A Postcard</a>
 
 ### What Should I Write?  
 - Share a personal story about how the ACA has helped you, and why it is important that any law maintains that kind of coverage
