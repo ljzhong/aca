@@ -2,7 +2,7 @@ var mock = {};
 
 // Show/hide scripts based on buttons
 $(".js-hide-show-button").click(function () {
-    let  obj_id = "#" + this.id + "-section";
+    let obj_id = "#" + this.id + "-section";
     if ($(obj_id).hasClass("hidden")) {
         $(this).html("hide script");
         $(obj_id).removeClass("hidden");
@@ -59,7 +59,7 @@ $(".next").click(function () {
     if (animating) return false;
     animating = true;
 
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('html, body').animate({
             scrollTop: $("ul#progressbar").offset().top
         }, 800);
@@ -185,6 +185,12 @@ $("#postcard-form-validate").click(function () {
         return false;
     }
 
+    if ($('#postcard-story').val().indexOf('"') > -1) {
+        $(this).find(':input[type=submit]').prop('disabled', true);
+        $('#postcard-error-2').html("Story cannot contain double quotes");
+        return false;
+    }
+
     if ($('#postcard-story').val().length > 300) {
         $(this).find(':input[type=submit]').prop('disabled', true);
         $('#postcard-error-2').html("Story cannot be greater than 300 char");
@@ -195,7 +201,7 @@ $("#postcard-form-validate").click(function () {
     if (animating) return false;
     animating = true;
 
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('html, body').animate({
             scrollTop: $("ul#progressbar").offset().top
         }, 800);
@@ -238,7 +244,7 @@ $("#postcard-form-validate").click(function () {
 });
 
 $("#postcard-submit-friend").click(function () {
-    window.open ('https://www.facebook.com/dialog/feed?app_id=1257081251043986&link=https://www.fightforhealthcare.org/friends/trumpcare-postcard-tsunami-rep?utm_source=facebook&utm_campaign=postcard_0&utm_medium=sharetopay', 'newwindow', config = 'height=400, width=600, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+    window.open('https://www.facebook.com/dialog/feed?app_id=1257081251043986&link=https://www.fightforhealthcare.org/friends/trumpcare-postcard-tsunami-rep?utm_source=facebook&utm_campaign=postcard_0&utm_medium=sharetopay', 'newwindow', config = 'height=400, width=600, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
     return true;
 });
 
@@ -247,7 +253,7 @@ $("#postcard-address")
     .geocomplete()
     .bind("geocode:result", function (event, result) {
         // MOCK: Set the 'to' address information
-        let  address = result.formatted_address.replace(/^\d+\s+/, '');
+        let address = result.formatted_address.replace(/^\d+\s+/, '');
         $('.mock-address-line1').html(address.substr(0, address.indexOf(',')));
         $('.mock-address-line2').html(address.substr(address.indexOf(',') + 2, address.length));
 
@@ -279,16 +285,6 @@ $("#postcard-address")
         gapi.client.setApiKey('AIzaSyAY6i_IaQ8wW-g1Vi96IDqMuEUkv_sCPg8');
         lookup(result.formatted_address, renderResults);
     });
-$("#postcard-address").blur(function () {
-    $("#postcard-address-button").addClass("disabled");
-
-    $("#postcard-error").empty().append(document.createTextNode(
-        "Find your reps by selecting your completed address"
-    ));
-    $("#postcard-sen1").empty();
-    $("#postcard-sen2").empty();
-    $("#postcard-rep").empty();
-});
 
 /**
  * Build and execute request to look up voter info for provided address.
@@ -302,7 +298,7 @@ function lookup(address, callback) {
      * @type {gapi.client.HttpRequest}
      */
     var req = gapi.client.request({
-        'path' : '/civicinfo/v2/representatives',
+        'path': '/civicinfo/v2/representatives',
         'params': {
             'key': 'AIzaSyAY6i_IaQ8wW-g1Vi96IDqMuEUkv_sCPg8',
             'levels': 'country',
