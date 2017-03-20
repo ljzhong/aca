@@ -244,7 +244,7 @@ $("#postcard-form-validate").click(function () {
 });
 
 $("#postcard-submit-friend").click(function () {
-    window.open('https://www.facebook.com/dialog/feed?app_id=1257081251043986&link=https://www.fightforhealthcare.org/friends/trumpcare-postcard-tsunami-rep?utm_source=facebook&utm_campaign=postcard_0&utm_medium=sharetopay', 'newwindow', config = 'height=400, width=600, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+    window.open('https://www.facebook.com/dialog/feed?app_id=1257081251043986&link=https://www.fightforhealthcare.org/friends/trumpcare-postcard-tsunami-rep?utm_source=FBPTshare', 'newwindow', config = 'height=400, width=600, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
     return true;
 });
 
