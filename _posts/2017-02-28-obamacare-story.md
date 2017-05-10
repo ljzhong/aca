@@ -34,29 +34,16 @@ Fight For Healthcare is collecting personal stories about peoples' experiences w
 
 ## Share your story
 
+**UPDATE:** Fight for healthcare is in the middle of migrating to Uprise, a partner that can provide us the technical support needed to maintain our website and keep fighting for our rights.
+
+*If you are interested in sharing your story, please PLEASE go to [Our Healthcare Cause on Uprise](https://goo.gl/7TmWMV), scroll down, and fill out your story there by clicking on "Tell your story". Thanks!*
+
 Some examples of stories:
 
 - What would happen to you if the ACA was repealed?
 - What your health insurance coverage was like before versus after the ACA was passed?
 
 <!-- BEGIN FORM -->
-
-<div id="story-form">
-<form name="story" action="tell-story" netlify>
-
-<h3 id="story-form-title">The story form</h3>
-
-<input id="story-name" class="subscribe-form-input" title="Your name" placeholder="First name, last initial (optional)" type="text" name="story-name">
-
-<textarea id="story-text" class="subscribe-form-input" title="Your ACA story" placeholder="Because of the ACA, I..." name="story"></textarea><br/>
-
-<input id="story-zip" class="subscribe-form-input" title="Your 5-digit zip code" placeholder="Your 5-digit zip code" type="text" pattern="[0-9]{5}" name="story-zip">
-
-<input id="story-email" class="subscribe-form-input" title="Your valid email address" placeholder="Your email address" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="story-email"><br/>
-
-<button id="story-form-button" class="subscribe-form-button btn">Submit</button>
-</form>
-</div>
 
 <!-- ENDE FORM -->
 
